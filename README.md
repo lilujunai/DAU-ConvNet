@@ -39,7 +39,7 @@ Pretrained models for Caffe from CVPR 2018 papers are available:
 
 Slightly less efficent version of DAUs can be found at [DAU-ConvNet-TF](https://github.com/skokec/DAU-ConvNet-TF), which is easier and faster to use, sice it uses only Python/TensorFlow operations (no need to compile it). Note, that the code is slighty slower and will use slightly more GPU memory.
 
-# TensorFlow (C++/CUDA plugin version)]#
+# TensorFlow (C++/CUDA plugin version) #
 
 We provide TensorFlow plugin and appropriate Python wrappers that can be used to directly replace the `tf.contrib.layers.conv2d` function. Note, our C++/CUDA code natively supports only NCHW format for input, please update your TensorFlow models to use this format. 
 
