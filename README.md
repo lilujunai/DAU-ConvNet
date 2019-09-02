@@ -34,6 +34,10 @@ Pretrained models for Caffe from CVPR 2018 papers are available:
 * [AlexNet-DAU-ConvNet-small](https://gist.github.com/skokec/c9748b5d7ff99fcce7a20b9a2806004f) (56.4% top-1 accuracy, 0.3 mio DAU units)
 * [AlexNet-DAU-ConvNet-large](https://gist.github.com/skokec/d3b97367af569524fb85cf026cf5dcb8) (57.3% top-1 accuracy, 1.5 mio DAU units)
 
+# TensorFlow - without C++ compiled code #
+
+Slightly less efficent version of DAUs can be found at [DAU-ConvNet-TF](https://github.com/skokec/DAU-ConvNet-TF), which is easier and faster to use, sice it uses only Python/TensorFlow operations (no need to compile it). Note, that the code is slighty slower and will use slightly more GPU memory.
+
 # TensorFlow #
 
 We provide TensorFlow plugin and appropriate Python wrappers that can be used to directly replace the `tf.contrib.layers.conv2d` function. Note, our C++/CUDA code natively supports only NCHW format for input, please update your TensorFlow models to use this format. 
