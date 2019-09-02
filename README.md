@@ -4,7 +4,8 @@ Official implementation of Displaced Aggregation Units for Convolutional Network
 This repository is a self-contained DAU layer implementation in C++ and CUDA, plus a TensorFlow plugin. Use this library to implement DAU layers for any deep learning framework. For more details on DAUs see [ViCoS research page](http://www.vicos.si/Research/DeepCompositionalNet).
 
 Available implementations :
- * TensorFlow
+ * [TensorFlow (C++/CUDA plugin)](https://github.com/skokec/DAU-ConvNet#tensorflow)
+ * [TensorFlow (pure Python/TensorFlow version)](https://github.com/skokec/DAU-ConvNet-TF)
  * [Caffe](https://github.com/skokec/DAU-ConvNet-caffe)
  
 See below for more details on each implementation.
@@ -34,11 +35,11 @@ Pretrained models for Caffe from CVPR 2018 papers are available:
 * [AlexNet-DAU-ConvNet-small](https://gist.github.com/skokec/c9748b5d7ff99fcce7a20b9a2806004f) (56.4% top-1 accuracy, 0.3 mio DAU units)
 * [AlexNet-DAU-ConvNet-large](https://gist.github.com/skokec/d3b97367af569524fb85cf026cf5dcb8) (57.3% top-1 accuracy, 1.5 mio DAU units)
 
-# TensorFlow - without C++ compiled code #
+# TensorFlow (pure Python/TensorFlow version) #
 
 Slightly less efficent version of DAUs can be found at [DAU-ConvNet-TF](https://github.com/skokec/DAU-ConvNet-TF), which is easier and faster to use, sice it uses only Python/TensorFlow operations (no need to compile it). Note, that the code is slighty slower and will use slightly more GPU memory.
 
-# TensorFlow #
+# TensorFlow (C++/CUDA plugin version)]#
 
 We provide TensorFlow plugin and appropriate Python wrappers that can be used to directly replace the `tf.contrib.layers.conv2d` function. Note, our C++/CUDA code natively supports only NCHW format for input, please update your TensorFlow models to use this format. 
 
