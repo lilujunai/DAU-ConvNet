@@ -4,7 +4,7 @@ Official implementation of Displaced Aggregation Units for Convolutional Network
 This repository is a self-contained DAU layer implementation in C++ and CUDA, plus a TensorFlow plugin. Use this library to implement DAU layers for any deep learning framework. For more details on DAUs see [ViCoS research page](http://www.vicos.si/Research/DeepCompositionalNet).
 
 Available implementations :
- * [TensorFlow (C++/CUDA plugin)](https://github.com/skokec/DAU-ConvNet#tensorflow)
+ * [TensorFlow (C++/CUDA plugin)](https://github.com/skokec/DAU-ConvNet/#tensorflow-ccuda-plugin-version)
  * [TensorFlow (pure Python/TensorFlow version)](https://github.com/skokec/DAU-ConvNet-TF)
  * [Caffe](https://github.com/skokec/DAU-ConvNet-caffe)
  
